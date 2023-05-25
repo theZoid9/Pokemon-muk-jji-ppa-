@@ -1,37 +1,29 @@
 import random
-import pokemon_data
+from pokemon_data import pokemon_names
 
-
-
-
-def pokemon_names():
-     print(pokemon_data.pokemon_names)
-     return pokemon_data.pokemon_names
-
-
-def pokemon_weakness():
-    print(pokemon_data.type_weaknesses)
-    return pokemon_data.type_weaknesses
 
 
 def bot_choice():
-    poke_list = pokemon_names().values()
-    bot = random.choice(poke_list)
-    print(bot)
-    return 
+    pass
+
 
 
 def player_choice():
-    pass
+    player_input = input("chooseYour Pokemon!")
+    for values in pokemon_names.values():
+        for x in values:
+            if x == player_input:
+                     print(f"You choose{player_input}!!!")
+        
+
 
 
 def main():
-    pass
+     pass
 
 
-
-bot_choice()
 
     
+player_choice()    
     
     

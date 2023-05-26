@@ -51,7 +51,7 @@ def main():
     print(tuple(pokemon_n_only))
     player_pokemon = player_pokemon_choice()
     time.sleep(3)
-    print(f"lets Go !! {player_pokemon}!!! \n")
+    print(f"lets Go !! {player_pokemon}! \n")
     countdown()
     bot_player = bot_pokemon_choice()
     time.sleep(3)

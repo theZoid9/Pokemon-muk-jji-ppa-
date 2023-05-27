@@ -2,7 +2,7 @@ import random
 import time
 from pokemon_data import pokemon_names
 from pokemon_data import pokemon_n_only
-
+from pokemon_data import pokemon_moves
 
 def bot_pokemon_choice():
     
@@ -31,8 +31,21 @@ def bot_pokemon_type():
     pass
 
 
-def pokemon_moves():
-    pass
+def pokemon_move():
+    
+    pk_move = player_pokemon_choice()
+    print("hey")
+    
+    for pokemon in pokemon_moves:
+        moves = pokemon_moves[pokemon]
+        if pk_move == pokemon:
+            print(moves)
+            return moves
+            
+            
+            
+            
+ 
 
 
 
@@ -62,7 +75,9 @@ def main():
     print(f"Trainer player: I choose {bot_player} ..lets Fight!!\n")
     time.sleep(5)
     print(f"{player_pokemon} vs {bot_player}\n")
+    pokemon_move()
     
     
-    
-main()
+
+pokemon_move()
+

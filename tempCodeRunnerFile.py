@@ -1,1 +1,1 @@
-Diglett
+Dratini

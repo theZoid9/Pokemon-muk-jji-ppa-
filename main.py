@@ -31,6 +31,10 @@ def bot_pokemon_type():
     pass
 
 
+def pokemon_moves():
+    pass
+
+
 
 def countdown():
     

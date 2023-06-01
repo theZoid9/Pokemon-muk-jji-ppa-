@@ -23,8 +23,14 @@ def player_pokemon_choice():
         
 
 
-def player_pokemon_type():
-    pass
+def player_pokemon_type(player_pokemon):
+    
+
+     for key, val in pokemon_names.items():
+         if player_pokemon in val:
+             print(key)
+             return key
+
 
 
 def bot_pokemon_type():
@@ -75,9 +81,8 @@ def main():
     print(f"Trainer player: I choose {bot_player} ..lets Fight!!\n")
     time.sleep(5)
     print(f"{player_pokemon} vs {bot_player}\n")
-    pokemon_move()
-    
+    player_pokemon_type(player_pokemon)
     
 
-pokemon_move()
+main()
 

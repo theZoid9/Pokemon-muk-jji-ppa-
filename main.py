@@ -1,8 +1,6 @@
 import random
 import time
-from pokemon_data import pokemon_names
-from pokemon_data import pokemon_n_only
-from pokemon_data import pokemon_moves
+from pokemon_data import pokemon_names,pokemon_n_only,pokemon_moves
 
 
 

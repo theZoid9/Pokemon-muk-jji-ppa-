@@ -28,7 +28,7 @@ def player_pokemon_type(player_pokemon):
 
      for key, val in pokemon_names.items():
          if player_pokemon in val:
-             print(key)
+             print(f"Pokemon Type: {key}")
              return key
 
 

@@ -50,7 +50,17 @@ def pokemon_move(player_pokemon):
          if player_pokemon == pokemon:
              break
                   
-            
+                  
+                  
+def move_selected(player_pokemon):
+    
+    player_pokemon = player_pokemon_choice()
+    move = pokemon_move(player_pokemon)
+    rand = random.choice(move)
+    print(f"{player_pokemon} uses {rand}")
+    
+    
+              
             
 def countdown():
     
@@ -77,9 +87,8 @@ def main():
     print(f"{player_pokemon} vs {bot_player}\n")
     player_pokemon_type(player_pokemon)
     bot_pokemon_type(bot_player)
-    rand = pokemon_move(player_pokemon)
-    rand = random.choice(rand)
-    print(rand)
+    move_selected(player_pokemon)
+
 
 main()
 

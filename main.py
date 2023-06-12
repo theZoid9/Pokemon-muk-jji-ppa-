@@ -18,7 +18,6 @@ def player_pokemon_choice():
     pokemon_list = random.choice(pokemon_list)
     player = random.choice(pokemon_list)
     return player
-                
 
         
 def player_pokemon_type(player_pokemon):
@@ -37,6 +36,8 @@ def bot_pokemon_type(bot_pokemon):
              return key
 
 
+
+
 def pokemon_move(player_pokemon):
     
     
@@ -53,12 +54,15 @@ def pokemon_move(player_pokemon):
                   
                   
 def move_selected(player_pokemon):
-    
-    player_pokemon = player_pokemon_choice()
-    move = pokemon_move(player_pokemon)
-    rand = random.choice(move)
-    print(f"{player_pokemon} uses {rand}")
-    
+      try:
+          move = pokemon_move(player_pokemon)
+          rand = random.choice(move)
+          print(f"{player_pokemon} uses {rand}")
+          
+      except TypeError:
+          print("No moves")    
+ 
+        
     
               
             
@@ -88,6 +92,9 @@ def main():
     player_pokemon_type(player_pokemon)
     bot_pokemon_type(bot_player)
     move_selected(player_pokemon)
+    
+    
+        
 
 
 main()

@@ -1,13 +1,13 @@
 # Pokemon-muk-jji-ppa-
-** classic pokemon battle sim V1.0 **
+** Classic pokemon battle sim V1.0 **
 
-Simulating the battle mech of pokemon GBA .
+Simulating the battle mech of pokemon GBA (gen1 ,gen2).
 
-features 
+Features 
 
-everything is auto at the moment 
-select Player/Bot pokemon 
-select Player pokemon move
+Everything is auto at the moment 
+Select Player/Bot pokemon 
+Select Player pokemon move
 
 Updates to come
 
@@ -22,9 +22,9 @@ How to run
 
 run code in code editor 
 
-note !!
+Note !!
 
-game Not completed 
-message me if you have any ideas on how to improve
-thank your
+Game Not completed 
+Message me if you have any ideas on how to improve
+Thank your
 
